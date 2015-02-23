@@ -1,0 +1,9 @@
+<h2>Recent Work</h2>
+
+<ul>
+    {{#each site in model}}
+        <li>
+            {{link-to site.name 'sites.show' site}}
+        </li>
+    {{/each}}
+</ul>
